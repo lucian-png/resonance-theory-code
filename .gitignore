@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Generated Word docs (can be regenerated from scripts)
+*.docx
+
+# IDE
+.vscode/
+.idea/
+
+# Temp files
+~$*
