@@ -2,7 +2,7 @@
 
 **Author: Lucian Randolph**
 
-This repository contains the Python code used to generate all computational visualizations, formatted documents, and control group validation for the Resonance Theory paper series and the Lucian Method.
+20 papers in 5 days. This repository contains the Python code used to generate all computational visualizations, formatted documents, and control group validation for the Resonance Theory paper series and the Lucian Method.
 
 ---
 
@@ -20,16 +20,27 @@ The Lucian Method (formally: Mono-Variable Extreme Scale Analysis, MESA) is a ma
 
 ## The Papers
 
-| # | Title | Field | DOI | Figures |
-|---|-------|-------|-----|---------|
-| I | **The Bridge Was Already Built** | Physics | [10.5281/zenodo.18716086](https://doi.org/10.5281/zenodo.18716086) | 13 |
-| II | **One Light, Every Scale** | Physics | [10.5281/zenodo.18723787](https://doi.org/10.5281/zenodo.18723787) | 20 |
-| III | **Seven Problems, One Framework** | Physics | [10.5281/zenodo.18724585](https://doi.org/10.5281/zenodo.18724585) | 10 |
-| IV | **The Resonance of Reality** | Consciousness | [10.5281/zenodo.18725698](https://doi.org/10.5281/zenodo.18725698) | 0 |
-| V | **Cancer as Fractal Emergence** | Medicine | [10.5281/zenodo.18735634](https://doi.org/10.5281/zenodo.18735634) | 0 |
-| VI | **The Fractal Genome** | Genomics | [10.5281/zenodo.18735638](https://doi.org/10.5281/zenodo.18735638) | 0 |
-| VII | **The Universal Diagnostic** | Psychology | [10.5281/zenodo.18725703](https://doi.org/10.5281/zenodo.18725703) | 0 |
-| — | **The Lucian Method — Control Group** | Methodology | [DOI pending] | 2 |
+| # | Title | Field | DOI |
+|---|-------|-------|-----|
+| 0 | **The Field That Forgot Itself** | Philosophy of Science | [10.5281/zenodo.18764176](https://doi.org/10.5281/zenodo.18764176) |
+| I | **The Bridge Was Already Built** | Physics | [10.5281/zenodo.18716086](https://doi.org/10.5281/zenodo.18716086) |
+| II | **One Light, Every Scale** | Physics | [10.5281/zenodo.18723787](https://doi.org/10.5281/zenodo.18723787) |
+| III | **Seven Problems, One Framework** | Physics | [10.5281/zenodo.18724585](https://doi.org/10.5281/zenodo.18724585) |
+| IV | **The Resonance of Reality** | Consciousness | [10.5281/zenodo.18725698](https://doi.org/10.5281/zenodo.18725698) |
+| V | **The Lucian Method** | Methodology | [10.5281/zenodo.18764623](https://doi.org/10.5281/zenodo.18764623) |
+| VI | **How to Break Resonance Theory** | Falsifiability | [10.5281/zenodo.18750736](https://doi.org/10.5281/zenodo.18750736) |
+| VII | **Solve These Better** | Open Problems | [10.5281/zenodo.18756292](https://doi.org/10.5281/zenodo.18756292) |
+| VIII | **Why Does Time Have a Direction?** | Physics | [10.5281/zenodo.18764576](https://doi.org/10.5281/zenodo.18764576) |
+| IX | **Cancer as Fractal Emergence** | Medicine | [10.5281/zenodo.18735634](https://doi.org/10.5281/zenodo.18735634) |
+| X | **The Fractal Genome** | Genomics | [10.5281/zenodo.18735638](https://doi.org/10.5281/zenodo.18735638) |
+| XI | **The Millennium Problem** | Mathematics | [10.5281/zenodo.18759223](https://doi.org/10.5281/zenodo.18759223) |
+| XII | **The Boltzmann Fractal** | Thermodynamics | [10.5281/zenodo.18772441](https://doi.org/10.5281/zenodo.18772441) |
+| XIII | **Why You Will Resist This** | Psychology of Science | [10.5281/zenodo.18757190](https://doi.org/10.5281/zenodo.18757190) |
+| XIV | **The Universal Diagnostic** | Psychology | [10.5281/zenodo.18725703](https://doi.org/10.5281/zenodo.18725703) |
+| XV | **The Interior Method** | Psychology | [10.5281/zenodo.18733515](https://doi.org/10.5281/zenodo.18733515) |
+| XVI | **One Geometry — Resonance Unification** | Unification | [10.5281/zenodo.18776715](https://doi.org/10.5281/zenodo.18776715) |
+
+Papers XVII, XIX, and XX are completed but withheld pending IP protection.
 
 ---
 
@@ -37,46 +48,46 @@ The Lucian Method (formally: Mono-Variable Extreme Scale Analysis, MESA) is a ma
 
 ```
 resonance-theory-code/
-├── paper_I_the_bridge/           # Resonance Theory I
+├── paper_I_the_bridge/              # Paper I: The Bridge Was Already Built
 │   ├── 01_schwarzschild_across_scales.py
 │   ├── 02_bkl_harmonic_dynamics.py
 │   ├── 03_harmonic_evolution.py
 │   ├── 04_quantum_bridge.py
 │   ├── 05_generate_word_doc.py
-│   └── figures/                  # 13 generated figures
+│   └── figures/                     # 13 generated figures
 │
-├── paper_II_one_light/           # Resonance Theory II
+├── paper_II_one_light/              # Paper II: One Light, Every Scale
 │   ├── 06_standard_model_part1.py
 │   ├── 07_standard_model_part2.py
 │   ├── 08_generate_paper_two_doc.py
 │   ├── 09_cosmos_part1.py
 │   ├── 10_cosmos_part2.py
-│   └── figures/                  # 20 generated figures
+│   └── figures/                     # 20 generated figures
 │
-├── paper_III_the_room/           # Resonance Theory III
+├── paper_III_the_room/              # Paper III: Seven Problems, One Framework
 │   ├── 11_quantum_foundations.py
 │   ├── 12_time_blackholes.py
 │   ├── 13_particles_masses.py
 │   ├── 14_graveyard.py
 │   ├── 15_generate_paper_three_doc.py
-│   └── figures/                  # 10 generated figures
+│   └── figures/                     # 10 generated figures
 │
-├── paper_XXIX_universal_diagnostic/
-│   └── 16_generate_paper_xxix_doc.py
+├── paper_IV_resonance_of_reality/   # Paper IV: The Resonance of Reality
+│   └── 17_generate_paper_iv_doc.py
 │
-├── paper_XXX_resonance_of_reality/
-│   └── 17_generate_paper_xxx_doc.py
+├── paper_IX_cancer_fractal_emergence/  # Paper IX: Cancer as Fractal Emergence
+│   └── 18_generate_paper_ix_doc.py
 │
-├── paper_XXXII_cancer_fractal_emergence/
-│   └── 18_generate_paper_xxxii_doc.py
+├── paper_X_fractal_genome/          # Paper X: The Fractal Genome
+│   └── 19_generate_paper_x_doc.py
 │
-├── paper_XXXIII_fractal_genome/
-│   └── 19_generate_paper_xxxiii_doc.py
+├── paper_XIV_universal_diagnostic/  # Paper XIV: The Universal Diagnostic
+│   └── 16_generate_paper_xiv_doc.py
 │
-└── lucian_method/                # The Lucian Method — Calibration & Papers
-    ├── 20_mandelbrot_control_group.py    # Control group figures (fig20, fig21)
-    ├── 21_generate_mandelbrot_control_paper.py  # Control group paper (.docx)
-    ├── 22_generate_lucian_method_v2.py   # Lucian Method v2 paper (.docx)
+└── lucian_method/                   # The Lucian Method — Calibration
+    ├── 20_mandelbrot_control_group.py
+    ├── 21_generate_mandelbrot_control_paper.py
+    ├── 22_generate_lucian_method_v2.py
     └── figures/
         ├── fig20_mandelbrot_control_group.png
         └── fig21_mandelbrot_extreme_range.png
@@ -96,7 +107,7 @@ The `lucian_method/` directory contains the foundational validation of the Lucia
 
 - **`22_generate_lucian_method_v2.py`** — Generates the complete Lucian Method paper v2 (.docx) with the full narrative: method → calibration → application to Einstein and Yang-Mills → proof.
 
-### Visualization Scripts (Papers I-III)
+### Visualization Scripts (Papers I–III)
 
 The physics papers include computational visualizations demonstrating that Einstein's field equations and the Yang-Mills gauge field equations satisfy the five classification criteria for fractal geometric equations. The scripts generate figures showing:
 
@@ -104,9 +115,9 @@ The physics papers include computational visualizations demonstrating that Einst
 - **Paper II:** Standard Model classification against all five fractal criteria, cosmological implications (dark matter, dark energy, vacuum energy, cosmic web, BAO), grand unification landscape
 - **Paper III:** Quantum measurement problem, entanglement, Bell inequality, arrow of time, black hole information paradox, matter-antimatter asymmetry, Strong CP problem, neutrino masses
 
-### Document Generators (All Papers)
+### Document Generators
 
-Each paper has a Python script that generates a formatted Word document (.docx) using the `python-docx` library. These produce publication-ready documents with consistent formatting: A4 page, Times New Roman 11pt, 1.15 line spacing, formal academic structure.
+Each paper with code in this repository has a Python script that generates a formatted Word document (.docx) using the `python-docx` library. These produce publication-ready documents with consistent formatting: A4 page, Times New Roman 11pt, 1.15 line spacing, formal academic structure.
 
 ---
 
@@ -138,17 +149,7 @@ This produces:
 - `fig20_mandelbrot_control_group.png` — 6-panel control group analysis
 - `fig21_mandelbrot_extreme_range.png` — 6-panel extreme range validation
 
-To generate the control group paper (.docx):
-```bash
-python 21_generate_mandelbrot_control_paper.py
-```
-
-To generate the Lucian Method v2 paper (.docx):
-```bash
-python 22_generate_lucian_method_v2.py
-```
-
-To generate figures for Papers I-III:
+To generate figures for Papers I–III:
 ```bash
 cd paper_I_the_bridge
 python 01_schwarzschild_across_scales.py
@@ -167,7 +168,7 @@ Resonance Theory proposes that the fundamental equations of physics — Einstein
 
 This classification resolves the apparent incompatibility between quantum mechanics and general relativity by revealing them as different harmonic scales of a single continuous fractal geometric structure.
 
-The framework extends to psychology (the Dunning-Kruger effect as a fractal observational artifact), consciousness (as a resonant harmonic peak in a fractal information system), cancer (as a fractal emergent phase transition detectable before manifestation), and genomics (non-coding DNA as the fractal architecture of the genome).
+The framework extends to psychology, consciousness, cancer biology, genomics, thermodynamics, and mathematics — each domain analyzed through the same fractal geometric lens, each producing consistent results.
 
 ---
 
