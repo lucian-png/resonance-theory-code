@@ -2,7 +2,7 @@
 
 **Author: Lucian Randolph**
 
-20 papers in 5 days. This repository contains the Python code used to generate all computational visualizations, formatted documents, and control group validation for the Resonance Theory paper series and the Lucian Method.
+21 papers. This repository contains the Python code used to generate all computational visualizations, formatted documents, and control group validation for the Resonance Theory paper series and the Lucian Method.
 
 ---
 
@@ -12,7 +12,7 @@ The Lucian Method (formally: Mono-Variable Extreme Scale Analysis, MESA) is a ma
 
 **Calibration**: The method was validated against Mandelbrot's equation z → z² + c — a known fractal. All five fractal criteria were confirmed. The instrument is calibrated.
 
-**Application**: The calibrated method was applied to Einstein's field equations and the Yang-Mills equations of the Standard Model. Both classified as fractal geometric.
+**Application**: The calibrated method was applied to Einstein's field equations and the Yang-Mills equations of the Standard Model. Both classified as fractal geometric. The method was then applied to the interior Schwarzschild solution, revealing a five-cascade harmonic structure and Feigenbaum sub-harmonic spectrum that maps every class of astrophysical object.
 
 **Full method paper and results**: [lucian.co](https://lucian.co)
 
@@ -39,8 +39,9 @@ The Lucian Method (formally: Mono-Variable Extreme Scale Analysis, MESA) is a ma
 | XIV | **The Universal Diagnostic** | Psychology | [10.5281/zenodo.18725703](https://doi.org/10.5281/zenodo.18725703) |
 | XV | **The Interior Method** | Psychology | [10.5281/zenodo.18733515](https://doi.org/10.5281/zenodo.18733515) |
 | XVI | **One Geometry — Resonance Unification** | Unification | [10.5281/zenodo.18776715](https://doi.org/10.5281/zenodo.18776715) |
+| XXI | **The Chladni Universe** | Astrophysics / GR | [10.5281/zenodo.18791921](https://doi.org/10.5281/zenodo.18791921) |
 
-Papers XVII, XIX, and XX are completed but withheld pending IP protection.
+Papers XVII–XX are completed but withheld pending IP protection.
 
 ---
 
@@ -84,18 +85,36 @@ resonance-theory-code/
 ├── paper_XIV_universal_diagnostic/  # Paper XIV: The Universal Diagnostic
 │   └── 16_generate_paper_xiv_doc.py
 │
-└── lucian_method/                   # The Lucian Method — Calibration
-    ├── 20_mandelbrot_control_group.py
-    ├── 21_generate_mandelbrot_control_paper.py
-    ├── 22_generate_lucian_method_v2.py
+├── lucian_method/                   # The Lucian Method — Calibration
+│   ├── 20_mandelbrot_control_group.py
+│   ├── 21_generate_mandelbrot_control_paper.py
+│   ├── 22_generate_lucian_method_v2.py
+│   └── figures/
+│       ├── fig20_mandelbrot_control_group.png
+│       └── fig21_mandelbrot_extreme_range.png
+│
+└── paper_XXI_chladni_universe/      # Paper XXI: The Chladni Universe
+    ├── 28_paper_xxi_figures.py
+    ├── 29_generate_paper_xxi_doc.py
+    ├── 30_nature_figures.py
     └── figures/
-        ├── fig20_mandelbrot_control_group.png
-        └── fig21_mandelbrot_extreme_range.png
+        ├── fig28_spacetime_chladni_analysis.png
+        └── fig29_feigenbaum_universe.png
 ```
 
 ---
 
 ## What the Code Does
+
+### Paper XXI: The Chladni Universe — Why Celestial Objects Exist Where They Do
+
+The `paper_XXI_chladni_universe/` directory contains the computational engine for the most recent paper, submitted to *Nature*:
+
+- **`28_paper_xxi_figures.py`** — Applies the Lucian Method to the interior Schwarzschild solution (1916), driving energy density across **46 orders of magnitude** (10⁴ to 10⁵⁰ J/m³). Reveals a five-cascade harmonic structure in the metric with exact self-similarity across all spatial scales from 1 mm to the solar radius. Computes the Feigenbaum sub-harmonic spectrum (δ = 4.669...) and maps every major class of astrophysical object to a sub-cascade position. The Sun sits on sub-harmonic S9 (ratio 1.88×). The Earth's core sits on S19 (ratio 1.90×). White dwarfs map to S7. Generates two 6-panel figures (12 panels total).
+
+- **`29_generate_paper_xxi_doc.py`** — Generates the formal Paper XXI document (.docx) with 10 sections, 2 embedded figures, and 14 references. The Chladni Universe: the spacetime metric provides the vibrational structure, the Feigenbaum constant spaces the overtones, and matter settles on the nodes — like sand on a vibrating plate.
+
+- **`30_nature_figures.py`** — Generates publication-quality figures meeting *Nature* formatting requirements: TIFF format, 600 dpi, RGB, 180 mm maximum width, minimum 5 pt lettering. Three separate figures for submission.
 
 ### The Lucian Method — Calibration & Control Group
 
@@ -121,33 +140,66 @@ Each paper with code in this repository has a Python script that generates a for
 
 ---
 
+## The Chladni Universe — Key Results
+
+The application of the Lucian Method to the interior Schwarzschild solution reveals:
+
+1. **Five-cascade harmonic structure** — Phase transitions at compactness η = 0.001, 0.01, 0.1, 0.5, and 8/9 (Buchdahl limit)
+2. **Exact self-similarity** — g_tt(η = 0.1) = −0.724 for all spatial scales from 1 mm to the solar radius
+3. **Feigenbaum sub-harmonic spectrum** — Sub-cascades spaced by the universal constant δ = 4.669201609...
+4. **Astrophysical mapping** — Every major class of celestial object sits within a factor of 2 of a Feigenbaum sub-harmonic at its own characteristic scale
+
+| Object | Sub-Harmonic | Predicted ρ (J/m³) | Actual ρ (J/m³) | Ratio |
+|--------|-------------|-------------------|----------------|-------|
+| Sun | S9 | 2.83 × 10¹⁶ | 1.50 × 10¹⁶ | 1.88× |
+| Earth Core | S19 | 6.85 × 10¹³ | 3.60 × 10¹³ | 1.90× |
+| White Dwarf | S7 | 6.09 × 10²¹ | 1.00 × 10²² | 0.61× |
+| Jupiter Core | S17 | 1.19 × 10¹³ | 2.50 × 10¹³ | 0.47× |
+| Neutron Star | Primary (C2–C3) | — | 5.00 × 10³⁴ | — |
+
+**The universe is a Chladni plate.** The spacetime metric provides the vibrational structure. The Feigenbaum constant spaces the overtones. Matter settles on the nodes.
+
+---
+
 ## Requirements
 
 ```
 numpy
 matplotlib
 python-docx
+Pillow
 ```
 
 Install with:
 ```bash
-pip install numpy matplotlib python-docx
+pip install numpy matplotlib python-docx Pillow
 ```
 
 ---
 
 ## Running the Code
 
-Each script is self-contained. To generate the Mandelbrot control group figures:
+Each script is self-contained. To generate the Chladni Universe figures:
 
+```bash
+cd paper_XXI_chladni_universe
+python 28_paper_xxi_figures.py
+```
+
+This produces:
+- `fig28_spacetime_chladni_analysis.png` — 6-panel metric cascade and self-similarity analysis
+- `fig29_feigenbaum_universe.png` — 6-panel Feigenbaum sub-cascade and astrophysical mapping
+
+To generate Nature-quality figures (600 dpi TIFF):
+```bash
+python 30_nature_figures.py
+```
+
+To generate the Mandelbrot control group figures:
 ```bash
 cd lucian_method
 python 20_mandelbrot_control_group.py
 ```
-
-This produces:
-- `fig20_mandelbrot_control_group.png` — 6-panel control group analysis
-- `fig21_mandelbrot_extreme_range.png` — 6-panel extreme range validation
 
 To generate figures for Papers I–III:
 ```bash
@@ -168,7 +220,9 @@ Resonance Theory proposes that the fundamental equations of physics — Einstein
 
 This classification resolves the apparent incompatibility between quantum mechanics and general relativity by revealing them as different harmonic scales of a single continuous fractal geometric structure.
 
-The framework extends to psychology, consciousness, cancer biology, genomics, thermodynamics, and mathematics — each domain analyzed through the same fractal geometric lens, each producing consistent results.
+The framework extends to psychology, consciousness, cancer biology, genomics, thermodynamics, mathematics, and astrophysics — each domain analyzed through the same fractal geometric lens, each producing consistent results.
+
+The Chladni Universe result demonstrates that this fractal structure has direct empirical consequences: the density distribution of astrophysical objects is not arbitrary but follows the Feigenbaum sub-harmonic spectrum of Einstein's spacetime metric.
 
 ---
 
