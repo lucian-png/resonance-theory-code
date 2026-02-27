@@ -97,6 +97,8 @@ resonance-theory-code/
     ├── 28_paper_xxi_figures.py
     ├── 29_generate_paper_xxi_doc.py
     ├── 30_nature_figures.py
+    ├── 31_chladni_statistics.py      # v2: Statistical validation
+    ├── 32_generate_paper_xxi_v2_doc.py  # v2: Revised document generator
     └── figures/
         ├── fig28_spacetime_chladni_analysis.png
         └── fig29_feigenbaum_universe.png
@@ -112,9 +114,13 @@ The `paper_XXI_chladni_universe/` directory contains the computational engine fo
 
 - **`28_paper_xxi_figures.py`** — Applies the Lucian Method to the interior Schwarzschild solution (1916), driving energy density across **46 orders of magnitude** (10⁴ to 10⁵⁰ J/m³). Reveals a five-cascade harmonic structure in the metric with exact self-similarity across all spatial scales from 1 mm to the solar radius. Computes the Feigenbaum sub-harmonic spectrum (δ = 4.669...) and maps every major class of astrophysical object to a sub-cascade position. The Sun sits on sub-harmonic S9 (ratio 1.88×). The Earth's core sits on S19 (ratio 1.90×). White dwarfs map to S7. Generates two 6-panel figures (12 panels total).
 
-- **`29_generate_paper_xxi_doc.py`** — Generates the formal Paper XXI document (.docx) with 10 sections, 2 embedded figures, and 14 references. The Chladni Universe: the spacetime metric provides the vibrational structure, the Feigenbaum constant spaces the overtones, and matter settles on the nodes — like sand on a vibrating plate.
+- **`29_generate_paper_xxi_doc.py`** — Generates the formal Paper XXI v1 document (.docx) with 10 sections, 2 embedded figures, and 14 references.
 
 - **`30_nature_figures.py`** — Generates publication-quality figures meeting *Nature* formatting requirements: TIFF format, 600 dpi, RGB, 180 mm maximum width, minimum 5 pt lettering. Three separate figures for submission.
+
+- **`31_chladni_statistics.py`** — **Version 2 statistical validation.** Responds to peer review coverage argument. Expands the astrophysical catalog from 5 to 8 objects. Runs Monte Carlo null hypothesis test (10,000 trials). Computes p-values: full catalog p = 0.64 (not significant — coverage argument partially valid), pairwise Sun–Earth offset p = 0.013 (statistically significant). Discovers **two-population structure**: active core energy sources (Sun, Earth, PSR) at 0.53–0.66× vs. passive objects (Jupiter, Saturn, Mars, Moon, Sirius B) at 1.05–1.66×. Generates three Nature-quality TIFF figures.
+
+- **`32_generate_paper_xxi_v2_doc.py`** — Generates the revised Paper XXI v2 document (.docx) with 11 sections, 5 embedded figures (2 original + 3 statistical), 1 table, and 22 references. Incorporates all peer review revisions: revised self-similarity language, Feigenbaum hypothesis framing, new Section 8 (Statistical Validation with 5 subsections), two-population structure analysis, and Gaia DR3 testable prediction.
 
 ### The Lucian Method — Calibration & Control Group
 
@@ -145,19 +151,30 @@ Each paper with code in this repository has a Python script that generates a for
 The application of the Lucian Method to the interior Schwarzschild solution reveals:
 
 1. **Five-cascade harmonic structure** — Phase transitions at compactness η = 0.001, 0.01, 0.1, 0.5, and 8/9 (Buchdahl limit)
-2. **Exact self-similarity** — g_tt(η = 0.1) = −0.724 for all spatial scales from 1 mm to the solar radius
-3. **Feigenbaum sub-harmonic spectrum** — Sub-cascades spaced by the universal constant δ = 4.669201609...
-4. **Astrophysical mapping** — Every major class of celestial object sits within a factor of 2 of a Feigenbaum sub-harmonic at its own characteristic scale
+2. **Scale-invariant metric** — g_tt(η = 0.1) = −0.724 for all spatial scales (a consequence of dimensionless parameterization)
+3. **Feigenbaum sub-harmonic spectrum (hypothesis)** — Sub-cascades spaced by δ = 4.669201609... Motivated by fractal classification in Papers I–III; applied to static metric as hypothesis, not derivation
+4. **Astrophysical mapping** — Eight objects tested against sub-harmonic grid
 
-| Object | Sub-Harmonic | Predicted ρ (J/m³) | Actual ρ (J/m³) | Ratio |
-|--------|-------------|-------------------|----------------|-------|
-| Sun | S9 | 2.83 × 10¹⁶ | 1.50 × 10¹⁶ | 1.88× |
-| Earth Core | S19 | 6.85 × 10¹³ | 3.60 × 10¹³ | 1.90× |
-| White Dwarf | S7 | 6.09 × 10²¹ | 1.00 × 10²² | 0.61× |
-| Jupiter Core | S17 | 1.19 × 10¹³ | 2.50 × 10¹³ | 0.47× |
-| Neutron Star | Primary (C2–C3) | — | 5.00 × 10³⁴ | — |
+### Expanded Catalog (v2)
 
-**The universe is a Chladni plate.** The spacetime metric provides the vibrational structure. The Feigenbaum constant spaces the overtones. Matter settles on the nodes.
+| Object | Sub-Harmonic | Ratio (ρ_actual/ρ_predicted) | Population |
+|--------|-------------|------------------------------|------------|
+| Sun | S9 | 0.53× | Active (nuclear fusion) |
+| Earth Core | S19 | 0.53× | Active (radioactive decay) |
+| PSR J0348+0432 | S21 | 0.66× | Active (rotational energy) |
+| Jupiter Core | S17 | 1.05× | Passive (gravitational) |
+| Saturn Core | S18 | 1.30× | Passive (gravitational) |
+| Mars Core | S21 | 1.35× | Passive (cold iron) |
+| Moon Core | S22 | 1.44× | Passive (cold iron) |
+| Sirius B | S17 | 1.66× | Passive (electron degeneracy) |
+
+### Statistical Results (v2)
+
+- **Full catalog clustering**: p = 0.64 (NOT significant — coverage argument partially valid)
+- **Pairwise Sun–Earth offset**: p = 0.013 (statistically significant)
+- **Two-population structure**: Active core energy sources cluster at 0.53–0.66×; passive objects cluster at 1.05–1.66×. Clean gap between populations. Testable prediction for Gaia DR3.
+
+**The universe is a Chladni plate.** The spacetime metric provides the vibrational structure. The Feigenbaum constant spaces the overtones. Matter settles on one side of the nodes or the other — depending on whether it generates its own energy.
 
 ---
 
@@ -193,6 +210,21 @@ This produces:
 To generate Nature-quality figures (600 dpi TIFF):
 ```bash
 python 30_nature_figures.py
+```
+
+To run the statistical validation (v2 — Monte Carlo, p-values, expanded catalog):
+```bash
+python 31_chladni_statistics.py
+```
+
+This produces:
+- `Figure_A_Ratio_Distribution.tiff` — Ratio dot plot for 8 astrophysical objects
+- `Figure_B_Monte_Carlo.tiff` — Monte Carlo null hypothesis test results
+- `Figure_C_Expanded_Feigenbaum_Map.tiff` — Expanded R–ρ landscape with all objects
+
+To generate the revised Paper XXI v2 document:
+```bash
+python 32_generate_paper_xxi_v2_doc.py
 ```
 
 To generate the Mandelbrot control group figures:
