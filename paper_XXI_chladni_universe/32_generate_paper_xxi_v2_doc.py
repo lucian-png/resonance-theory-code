@@ -865,7 +865,8 @@ add_body_mixed(
 
 add_body_mixed(
     'We address this objection with formal statistical tests. All analysis '
-    'code is publicly available [21].'
+    'code is publicly available at '
+    'https://github.com/lucian-png/resonance-theory-code.'
 )
 
 add_subsection_heading('8.1 The Coverage Argument')
@@ -1013,8 +1014,8 @@ add_body_mixed(
 add_body_mixed(
     '**Population A \u2014 Active core energy sources:** The Sun (nuclear '
     'fusion, ratio 0.53\u00d7), the Earth (radioactive decay + residual '
-    'primordial heat, ratio 0.53\u00d7), and PSR J0348+0432 (rotational energy '
-    'conversion, ratio 0.66\u00d7). These objects have active energy generation '
+    'primordial heat, ratio 0.53\u00d7), and PSR J0348+0432 (nuclear matter '
+    'in the strong-force regime, ratio 0.66\u00d7). These objects have active energy generation '
     'at their cores. All three cluster at ratios **0.53\u20130.66\u00d7** \u2014 '
     'systematically **below** the nearest sub-harmonic.'
 )
@@ -1207,7 +1208,7 @@ add_body_mixed(
     'This split, if confirmed by larger surveys, would imply that the '
     'Feigenbaum sub-harmonics function not as simple attractors but as '
     '**phase boundaries**. Objects with active energy sources (nuclear '
-    'fusion, radioactive decay, rotational energy extraction) settle on '
+    'fusion, radioactive decay, strong-force nuclear matter) settle on '
     'one side of the boundary. Objects supported by passive pressure '
     '(gravitational contraction, electron degeneracy, cold iron cores) '
     'settle on the other. The sub-harmonic is not where matter sits \u2014 '
