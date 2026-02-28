@@ -17,5 +17,25 @@ build/
 .vscode/
 .idea/
 
+# Data files (download separately)
+*.csv
+*.xlsx
+
+# PDFs (generated)
+*.pdf
+
+# Draft outlines and session notes
+*SESSION_SUMMARY*
+*OUTLINE*
+*DRAFT*
+*BRIEFING*
+Cover Letter*
+
+# TIFF figures (use PNG versions)
+*.tiff
+
 # Temp files
 ~$*
+
+# No personal or classified content
+# See individual paper READMEs for data sources

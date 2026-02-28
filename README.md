@@ -2,7 +2,7 @@
 
 **Author: Lucian Randolph**
 
-21 papers. This repository contains the Python code used to generate all computational visualizations, formatted documents, and control group validation for the Resonance Theory paper series and the Lucian Method.
+21 papers + the Lucian Law trilogy. This repository contains the Python code used to generate all computational visualizations, formatted documents, control group validation, and the Lucian Law falsification protocol for the Resonance Theory paper series.
 
 ---
 
@@ -39,9 +39,14 @@ The Lucian Method (formally: Mono-Variable Extreme Scale Analysis, MESA) is a ma
 | XIV | **The Universal Diagnostic** | Psychology | [10.5281/zenodo.18725703](https://doi.org/10.5281/zenodo.18725703) |
 | XV | **The Interior Method** | Psychology | [10.5281/zenodo.18733515](https://doi.org/10.5281/zenodo.18733515) |
 | XVI | **One Geometry — Resonance Unification** | Unification | [10.5281/zenodo.18776715](https://doi.org/10.5281/zenodo.18776715) |
+| XVIII | **Graphene & Spacetime Harmonic Cascades** | Materials / GR | — |
 | XXI | **The Chladni Universe** | Astrophysics / GR | [10.5281/zenodo.18791921](https://doi.org/10.5281/zenodo.18791921) |
+| XXII | **Dual Attractor Basins** | Astrophysics | — |
+| — | **The Lucian Law** | Framework | — |
+| — | **The Geometric Necessity of Feigenbaum's Constant** | Mathematics / Physics | — |
+| — | **The Full Extent of the Lucian Law** | Physics / Cosmology | — |
 
-Papers XVII–XX are completed but withheld pending IP protection.
+Papers XVII, XIX, XX are completed but withheld pending IP protection.
 
 ---
 
@@ -93,20 +98,82 @@ resonance-theory-code/
 │       ├── fig20_mandelbrot_control_group.png
 │       └── fig21_mandelbrot_extreme_range.png
 │
-└── paper_XXI_chladni_universe/      # Paper XXI: The Chladni Universe
-    ├── 28_paper_xxi_figures.py
-    ├── 29_generate_paper_xxi_doc.py
-    ├── 30_nature_figures.py
-    ├── 31_chladni_statistics.py      # v2: Statistical validation
-    ├── 32_generate_paper_xxi_v2_doc.py  # v2: Revised document generator
-    └── figures/
-        ├── fig28_spacetime_chladni_analysis.png
-        └── fig29_feigenbaum_universe.png
+├── paper_XVIII_graphene_spacetime/  # Paper XVIII: Graphene & Spacetime
+│   ├── 23_graphene_harmonic_cascade.py
+│   ├── 24_generate_paper_xviii_doc.py
+│   ├── 25_spacetime_harmonic_cascade.py
+│   ├── 26_generate_paper_xviii_warp_doc.py
+│   ├── 27_subcascade_analysis.py
+│   └── figures/                     # 6 generated figures
+│
+├── paper_XXI_chladni_universe/      # Paper XXI: The Chladni Universe
+│   ├── 28–33 scripts              # Analysis, figures, doc generators
+│   └── figures/
+│
+├── paper_XXII_dual_attractor/       # Paper XXII: Dual Attractor Basins
+│   ├── 34_dual_attractor_basins.py
+│   ├── 35_generate_paper_xxii_doc.py
+│   └── figures/
+│
+├── gaia_confirmation/               # Gaia DR3 Empirical Confirmation
+│   ├── 36_gaia_dr3_confirmation.py  # 50,000 stars, p < 10⁻³⁰⁰
+│   └── figures/
+│
+├── falsification_protocol/          # Lucian Law Falsification Protocol
+│   ├── 36_negative_control_linear.py
+│   ├── 37_nonlinearity_threshold.py
+│   ├── 38_coupling_topology.py
+│   ├── 39_counterexample_attempt.py
+│   ├── 40_blind_prediction.py
+│   ├── 41_dimensionality_test.py
+│   ├── LUCIAN_LAW_FALSIFICATION_PROTOCOL.md
+│   └── figures/                     # 6 test result figures
+│
+├── feigenbaum_derivation/           # Feigenbaum Constant Derivation
+│   ├── 42_feigenbaum_derivation.py  # Complete analysis (4 maps, known values)
+│   ├── figures/                     # 10 panels + composite
+│   └── paper_figures/               # Paper-numbered figure set
+│
+└── lucian_law_trilogy/              # The Lucian Law Trilogy
+    ├── generate_lucian_law_paper.py
+    ├── generate_feigenbaum_paper.py
+    ├── generate_full_extent_paper.py
+    ├── make_paper_figures.py
+    ├── make_full_extent_figures.py
+    └── paper_figures/               # Paper 3 figure set
 ```
 
 ---
 
 ## What the Code Does
+
+### The Lucian Law Trilogy (February 2026)
+
+The `lucian_law_trilogy/`, `feigenbaum_derivation/`, and `falsification_protocol/` directories contain the code for three papers that establish the Lucian Law as a universal law of geometric organization:
+
+1. **The Lucian Law** — Framework paper. Nineteen equation systems. Zero refutations. Falsification protocol with six independent tests. Gaia DR3 confirmation at p < 10⁻³⁰⁰.
+
+2. **The Geometric Necessity of Feigenbaum's Constant** — First quantitative prediction. Derives δ = 4.669201609... as a geometrically necessary consequence of three simultaneous constraints. Four period-doubling maps (logistic, sine, Ricker, quadratic-sine) produce identical geometric morphology. Known high-precision bifurcation values (Briggs, 1991) confirm convergence through twelve successive doublings.
+
+3. **The Full Extent of the Lucian Law** — The law's self-grounding property traced to its full vertical extent. The Big Bang as a dual attractor threshold event. Inflation as the geometric shape of the basin transition curve. Four falsifiable predictions.
+
+Key results from the Feigenbaum derivation (`42_feigenbaum_derivation.py`):
+- Known ratio convergence: δ₇ = 4.6693 (error 6.82 × 10⁻⁵)
+- Meta-system slope = −1.5415 (expected −ln(δ) = −1.5410), δ implied = 4.6715
+- Topology family: z=2→4.669, z=3→5.968, z=4→7.285, z=6→9.296
+- Gaia DR3: 50,000 stars, 23,133 active + 26,867 passive, KS p = 9.37 × 10⁻³¹⁰
+
+### Falsification Protocol
+
+The `falsification_protocol/` directory contains six independent tests designed to break the Lucian Law:
+- **Test 1** (36): Negative control — linear systems should NOT produce fractal geometry
+- **Test 2** (37): Nonlinearity threshold — where does geometric organization begin?
+- **Test 3** (38): Coupling topology — same topology, different equations → same organization
+- **Test 4** (39): Counterexample attempt — actively searching for refutation
+- **Test 5** (40): Blind prediction — predict before measuring
+- **Test 6** (41): Dimensionality test — 2D vs 3D vs higher
+
+All six tests passed. Zero refutations.
 
 ### Paper XXI: The Chladni Universe — Why Celestial Objects Exist Where They Do
 
@@ -182,14 +249,19 @@ The application of the Lucian Method to the interior Schwarzschild solution reve
 
 ```
 numpy
+scipy
 matplotlib
 python-docx
 Pillow
+astropy        # For Gaia DR3 queries (optional)
+astroquery     # For Gaia DR3 queries (optional)
 ```
 
 Install with:
 ```bash
-pip install numpy matplotlib python-docx Pillow
+pip install numpy scipy matplotlib python-docx Pillow
+# Optional, for Gaia DR3 data retrieval:
+pip install astropy astroquery
 ```
 
 ---
@@ -243,6 +315,38 @@ python 04_quantum_bridge.py
 ```
 
 Figures are saved to the same directory (or a `figures/` subfolder) as PNG files.
+
+To run the Feigenbaum derivation (generates all 10 panels + composite):
+```bash
+cd feigenbaum_derivation
+python 42_feigenbaum_derivation.py
+```
+
+To run the falsification protocol (all six tests):
+```bash
+cd falsification_protocol
+python 36_negative_control_linear.py
+python 37_nonlinearity_threshold.py
+python 38_coupling_topology.py
+python 39_counterexample_attempt.py
+python 40_blind_prediction.py
+python 41_dimensionality_test.py
+```
+
+To generate the trilogy papers (.docx):
+```bash
+cd lucian_law_trilogy
+python generate_lucian_law_paper.py
+python generate_feigenbaum_paper.py
+python generate_full_extent_paper.py
+```
+
+To generate paper-numbered figure sets:
+```bash
+cd lucian_law_trilogy
+python make_paper_figures.py           # Paper 2 figures
+python make_full_extent_figures.py     # Paper 3 figures
+```
 
 ---
 
