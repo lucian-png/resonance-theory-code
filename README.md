@@ -31,10 +31,10 @@ The foundation. Four papers establishing the law and its consequences.
 
 | Paper | Title | Field | DOI |
 |-------|-------|-------|-----|
-| 6 | **One Geometry — Resonance Unification** | Unification | [10.5281/zenodo.18776715](https://doi.org/10.5281/zenodo.18776715) |
+| 6 | **One Geometry — Resonance** | Unification | [10.5281/zenodo.18776715](https://doi.org/10.5281/zenodo.18776715) |
 | 7 | **The Lucian Universe** | Astrophysics / GR | [10.5281/zenodo.18791921](https://doi.org/10.5281/zenodo.18791921) |
 | 8 | **Dual Attractor Basins at Fractal Phase Boundaries: A Universal Two-Population Structure in Nonlinear Coupled Systems** | Astrophysics | [10.5281/zenodo.18805147](https://doi.org/10.5281/zenodo.18805147) |
-| 9 | **Validating the Method** | Methodology | [10.5281/zenodo.18764623](https://doi.org/10.5281/zenodo.18764623) |
+| 9 | **Validating the Method** | Methodology | — |
 
 ### 3 — The Hard Sciences
 
