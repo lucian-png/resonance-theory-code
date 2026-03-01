@@ -39,14 +39,11 @@ The Lucian Method (formally: Mono-Variable Extreme Scale Analysis, MESA) is a ma
 | XIV | **The Universal Diagnostic** | Psychology | [10.5281/zenodo.18725703](https://doi.org/10.5281/zenodo.18725703) |
 | XV | **The Interior Method** | Psychology | [10.5281/zenodo.18733515](https://doi.org/10.5281/zenodo.18733515) |
 | XVI | **One Geometry — Resonance Unification** | Unification | [10.5281/zenodo.18776715](https://doi.org/10.5281/zenodo.18776715) |
-| XVIII | **Graphene & Spacetime Harmonic Cascades** | Materials / GR | — |
 | XXI | **The Chladni Universe** | Astrophysics / GR | [10.5281/zenodo.18791921](https://doi.org/10.5281/zenodo.18791921) |
 | XXII | **Dual Attractor Basins** | Astrophysics | — |
 | — | **The Lucian Law** | Framework | — |
 | — | **The Geometric Necessity of Feigenbaum's Constant** | Mathematics / Physics | — |
 | — | **The Full Extent of the Lucian Law** | Physics / Cosmology | — |
-
-Papers XVII, XIX, XX are completed but withheld pending IP protection.
 
 ---
 
@@ -97,14 +94,6 @@ resonance-theory-code/
 │   └── figures/
 │       ├── fig20_mandelbrot_control_group.png
 │       └── fig21_mandelbrot_extreme_range.png
-│
-├── paper_XVIII_graphene_spacetime/  # Paper XVIII: Graphene & Spacetime
-│   ├── 23_graphene_harmonic_cascade.py
-│   ├── 24_generate_paper_xviii_doc.py
-│   ├── 25_spacetime_harmonic_cascade.py
-│   ├── 26_generate_paper_xviii_warp_doc.py
-│   ├── 27_subcascade_analysis.py
-│   └── figures/                     # 6 generated figures
 │
 ├── paper_XXI_chladni_universe/      # Paper XXI: The Chladni Universe
 │   ├── 28–33 scripts              # Analysis, figures, doc generators

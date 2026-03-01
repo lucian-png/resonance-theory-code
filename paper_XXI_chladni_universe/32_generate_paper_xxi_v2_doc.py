@@ -22,8 +22,7 @@ VERSION 2 CHANGES (responding to peer review):
   - Three new figures embedded (Figures A, B, C from statistical analysis)
   - Expanded references (21 total)
 
-NO FLAT-SPOT CONTENT. NO WARP CONTENT. NO PROPULSION CONTENT.
-This is pure astronomy: why the universe is built the way it is.
+Public paper — pure astronomy.
 
 Output: Paper_XXI_The_Chladni_Universe_v2.docx
 

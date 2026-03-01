@@ -15,9 +15,6 @@ This script generates figures for the PUBLIC paper demonstrating that:
 4. Every major class of astrophysical object operates near a Feigenbaum
    sub-harmonic of the spacetime metric at its own characteristic scale
 
-NO FLAT-SPOT CONTENT. NO WARP CONTENT. NO PROPULSION CONTENT.
-This is pure astronomy: why the universe is built the way it is.
-
 Outputs:
     fig28_spacetime_chladni_analysis.png   — 6-panel metric + self-similarity
     fig29_feigenbaum_universe.png          — 6-panel sub-cascade + astro mapping
@@ -167,7 +164,7 @@ def find_subcascade_match(R: float, rho: float, eta_C0: float = 0.001) -> float:
 def generate_figure_1(rho: np.ndarray, landscape: dict) -> None:
     """
     Figure 28: The metric harmonic cascade and self-similarity.
-    PUBLIC — no flat-spot or warp content.
+    Public analysis — pure astronomy.
     """
     fig = plt.figure(figsize=(18, 14), facecolor='white')
     gs = GridSpec(2, 3, hspace=0.35, wspace=0.3)
@@ -372,7 +369,7 @@ def generate_figure_1(rho: np.ndarray, landscape: dict) -> None:
 def generate_figure_2(rho: np.ndarray, landscape: dict) -> None:
     """
     Figure 29: Feigenbaum sub-cascade structure and astrophysical mapping.
-    PUBLIC — no flat-spot or warp content. Pure astronomy.
+    Public analysis — pure astronomy. Pure astronomy.
     """
     fig = plt.figure(figsize=(18, 14), facecolor='white')
     gs = GridSpec(2, 3, hspace=0.35, wspace=0.3)

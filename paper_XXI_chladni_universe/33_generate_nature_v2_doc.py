@@ -22,8 +22,6 @@ Corresponding figure files (uploaded separately to Nature):
   Figure_4_Monte_Carlo.tiff
   Figure_5_Expanded_Feigenbaum_Map.tiff
 
-NO FLAT-SPOT CONTENT. NO WARP CONTENT. NO PROPULSION CONTENT.
-
 Output: Nature_Chladni_Universe_v2.docx
 
 ==============================================================================

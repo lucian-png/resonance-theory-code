@@ -16,9 +16,6 @@ driven across 46 orders of magnitude in energy density, it reveals:
 4. Every major class of astrophysical object sits near a Feigenbaum
    sub-harmonic of the spacetime metric at its own characteristic scale
 
-NO FLAT-SPOT CONTENT. NO WARP CONTENT. NO PROPULSION CONTENT.
-This is pure astronomy: why the universe is built the way it is.
-
 Output: Paper_XIX_The_Chladni_Universe.docx
 
 Requires: fig28_spacetime_chladni_analysis.png

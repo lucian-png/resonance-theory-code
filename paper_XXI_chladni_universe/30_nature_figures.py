@@ -26,9 +26,6 @@ Figure 4: The Feigenbaum Map
     — The Chladni Map: astrophysical objects on sub-harmonic positions
     — Master Map: radius–density landscape with sub-cascade structure
 
-NOTE: Figure 2 (Spacetime Warp Classification) is WITHHELD — Paper XVIII IP.
-      It is NOT included in this submission.
-
 ==============================================================================
 """
 
@@ -691,6 +688,4 @@ if __name__ == '__main__':
             size_mb = os.path.getsize(f) / 1e6
             print(f"  {f}  ({size_mb:.1f} MB)")
 
-    print("\nNOTE: Figure 2 (Spacetime Warp Classification) is WITHHELD.")
-    print("      It is NOT included in this submission — Paper XVIII IP.")
     print("\nSTATUS: PUBLIC — FOR SUBMISSION TO NATURE")

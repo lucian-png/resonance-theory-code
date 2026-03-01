@@ -287,7 +287,7 @@ paper_rows = [
      'Dark matter and dark energy distribution models',
      'Fractal geometric across cosmological scales'],
     ['VIII', 'Condensed Matter',
-     'Graphene electronic band structure',
+     'Tight-binding lattice Hamiltonian',
      'Fractal geometric in band topology'],
     ['IX', 'Fluid Dynamics',
      'Navier-Stokes equations (turbulent regime)',
@@ -327,13 +327,6 @@ add_body('Table 1. Resonance Theory evidence base: nineteen applications of the 
 add_table(
     ['Paper', 'Domain', 'Equation System', 'Result'],
     paper_rows
-)
-
-add_body(
-    'Papers XVII through XX address specific engineering applications of the theoretical '
-    'framework and are withheld from publication pending patent review. Their omission from '
-    'this inventory does not affect the theoretical results presented here.',
-    italic=True
 )
 
 doc.add_heading('2.4 Empirical Confirmation', level=2)

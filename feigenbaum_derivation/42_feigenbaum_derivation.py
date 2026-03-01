@@ -12,7 +12,7 @@ Four parts:
   3. Three-constraint intersection → δ
   4. Gaia connection — law to constant to stars
 
-Lucian Randolph — Resonance Theory Paper XX (Feigenbaum Derivation)
+Lucian Randolph — Resonance Theory (Feigenbaum Derivation)
 February 2026
 """
 
