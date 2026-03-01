@@ -16,16 +16,16 @@ The foundation. Four papers establishing the law and its consequences.
 
 | Paper | Title | Field | DOI |
 |-------|-------|-------|-----|
-| 1 | **The Lucian Law** | Framework | [10.5281/zenodo.14908930](https://doi.org/10.5281/zenodo.14908930) |
-| 2 | **The Geometric Necessity of Feigenbaum's Constant** | Mathematics / Physics | [10.5281/zenodo.14908962](https://doi.org/10.5281/zenodo.14908962) |
-| 3 | **The Full Extent of the Lucian Law** | Physics / Cosmology | [10.5281/zenodo.14908978](https://doi.org/10.5281/zenodo.14908978) |
-| 4 | **The Inflationary Parameters** | Astrophysics / Cosmology | [10.5281/zenodo.14909742](https://doi.org/10.5281/zenodo.14909742) |
+| 1 | **The Lucian Law: A Universal Law of Geometric Organization in Nonlinear Systems** | Framework | [10.5281/zenodo.18818006](https://doi.org/10.5281/zenodo.18818006) |
+| 2 | **The Geometric Necessity of Feigenbaum's Constant: A Derivation from the Lucian Law** | Mathematics / Physics | [10.5281/zenodo.18818008](https://doi.org/10.5281/zenodo.18818008) |
+| 3 | **The Full Extent of the Lucian Law: From the Origin of the Universe to the Architecture of Reality** | Physics / Cosmology | [10.5281/zenodo.18818010](https://doi.org/10.5281/zenodo.18818010) |
+| 4 | **The Inflationary Parameters as Geometric Signatures of the Lucian Law: A Derivation from Stellar-Scale Measurements via Inter-Scale Geometric Architecture** | Astrophysics / Cosmology | [10.5281/zenodo.18819605](https://doi.org/10.5281/zenodo.18819605) |
 
 ### 1 — The Kill
 
 | Paper | Title | Field | DOI |
 |-------|-------|-------|-----|
-| 5 | **Slaying the Twin Dragons** | Astrophysics / Cosmology | — |
+| 5 | **Slaying the Twin Dragons: Dark Matter and Dark Energy as Time Emergence Artifacts of the Lucian Law** | Astrophysics / Cosmology | [10.5281/zenodo.18823919](https://doi.org/10.5281/zenodo.18823919) |
 
 ### 2 — The Evidence Base
 
@@ -33,7 +33,7 @@ The foundation. Four papers establishing the law and its consequences.
 |-------|-------|-------|-----|
 | 6 | **One Geometry — Resonance Unification** | Unification | [10.5281/zenodo.18776715](https://doi.org/10.5281/zenodo.18776715) |
 | 7 | **The Lucian Universe** | Astrophysics / GR | [10.5281/zenodo.18791921](https://doi.org/10.5281/zenodo.18791921) |
-| 8 | **Dual Attractor Basins** | Astrophysics | — |
+| 8 | **Dual Attractor Basins at Fractal Phase Boundaries: A Universal Two-Population Structure in Nonlinear Coupled Systems** | Astrophysics | [10.5281/zenodo.18805147](https://doi.org/10.5281/zenodo.18805147) |
 | 9 | **Validating the Method** | Methodology | [10.5281/zenodo.18764623](https://doi.org/10.5281/zenodo.18764623) |
 
 ### 3 — The Hard Sciences
