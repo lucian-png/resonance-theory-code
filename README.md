@@ -26,6 +26,7 @@ The foundation. Four papers establishing the law and its consequences.
 | Paper | Title | Field | DOI |
 |-------|-------|-------|-----|
 | 5 | **Slaying the Twin Dragons: Dark Matter and Dark Energy as Time Emergence Artifacts of the Lucian Law** | Astrophysics / Cosmology | [10.5281/zenodo.18823919](https://doi.org/10.5281/zenodo.18823919) |
+| — | **The Double-Edged Sword: Dark Energy as Clock Error, Dark Matter as Ruler Error** | Astrophysics / Cosmology | [10.5281/zenodo.18848728](https://doi.org/10.5281/zenodo.18848728) |
 
 ### 2 — The Evidence Base
 
@@ -104,6 +105,14 @@ resonance-theory-code/
 │   ├── 46_generate_twin_dragons_doc.py
 │   └── figures/                     # 12 panels + 2 composites
 │
+├── paper_double_edged_sword/        # The Double-Edged Sword
+│   ├── 58_peak_heights.py           # CMB peak height analysis
+│   ├── 60_ruler_correction.py       # NGC 3198 ruler correction, 6 panels
+│   ├── 61_sparc_sweep.py            # Full 175-galaxy SPARC sweep
+│   ├── 62_morphological_sort.py     # Morphological sort, topology map
+│   ├── 63_generate_double_edged_sword_doc.py
+│   └── figures/                     # 5 panels
+│
 ├── paper_XXI_chladni_universe/      # Paper 7: The Lucian Universe
 │   ├── 28–34 scripts               # Analysis, figures, v1/v2/v3 generators
 │   └── figures/
@@ -168,6 +177,14 @@ Dark matter and dark energy as twin artifacts of assuming time is fully expresse
 - **Dark Matter:** 175 SPARC galaxies. Feigenbaum z=6 in acceleration space at p = 3 × 10⁻¹¹. Time emergence τ < 0.5 at edges of 117/175 galaxies. a₀ = c·H₀/(δ+α) within 3.8% of fitted value.
 - **Dark Energy:** 1,701 Pantheon+ Type Ia supernovae. Zero-parameter τ(z) model fits within 3.2% of ΛCDM. Fitted z_transition = 1.449, ln(δ) prediction = 1.541 (6.4% error).
 
+### The Double-Edged Sword
+
+Dark energy as clock error, dark matter as ruler error. Extends Paper 5 with morphological evidence.
+
+- **Clock Error (Dark Energy):** 1,580 Pantheon+ supernovae (z > 0.01). τ model with β = ln(δ) fits within 6.4% of ΛCDM with fewer effective parameters.
+- **Ruler Error (Dark Matter):** NGC 3198 rotation curve. V_eff = V_bar / τ with p = log_δ(2) = 0.4499. Reduced χ²/dof = 2.10. Feigenbaum-derived exponent within 0.7% of optimal.
+- **Morphological Sort:** 175 SPARC galaxies sorted by Hubble type. Kruskal-Wallis p = 0.005 — morphological bins have statistically distinct coupling exponents. Monotonic trend: Early (0.549) → Classic (0.525) → Late (0.500) → Irregular (0.436). LSB galaxies converge to log_δ(2) ≈ 0.450 — the ground state.
+
 ### The Lucian Universe (Paper 7)
 
 Five-cascade harmonic structure in the interior Schwarzschild metric. Feigenbaum sub-harmonic spectrum. Dual attractor basins in astrophysical densities — active cores at 0.53–0.66×, passive objects at 1.05–1.66×. Gaia prediction confirmed at p = 10⁻³¹⁰.
@@ -217,6 +234,16 @@ python 45_dark_energy_twin.py
 
 # Paper 5: Generate .docx
 python 46_generate_twin_dragons_doc.py
+
+# The Double-Edged Sword
+cd paper_double_edged_sword
+python 58_peak_heights.py
+python 60_ruler_correction.py
+python 61_sparc_sweep.py
+python 62_morphological_sort.py
+
+# Generate .docx
+python 63_generate_double_edged_sword_doc.py
 
 # Paper 7: Lucian Universe figures
 cd paper_XXI_chladni_universe
