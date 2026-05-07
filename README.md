@@ -2,9 +2,30 @@
 
 **Author: Lucian Randolph**
 
-29 papers. One law. This repository contains the Python code used to generate all computational visualizations, formatted documents, control group validation, and the Lucian Law falsification protocol for the Resonance Theory paper series.
+This repository contains the Python code supporting the Resonance Theory paper series and the Unification Series — computational visualizations, N-convergence proofs, Whisper exponent quantification, formatted document generators, control group validation, and the Lucian Law falsification protocol.
 
 **Full papers and results**: [lucian.co](https://lucian.co)
+
+---
+
+## The Unification Series
+
+Four papers submitted to peer review (2026).
+
+| Paper | Title | Target Journal | Status |
+|-------|-------|----------------|--------|
+| I | **The Fractal Geometric Classification of the Fundamental Equations of Physics** | Physical Review E | Submitted |
+| II (letter) | **The Universal Cascade Across the Quantum-Classical Boundary** | Physical Review Letters | Submitted |
+| II (full) | **The Universal Cascade Across the Quantum-Classical Boundary** | Physical Review A | Submitted |
+| III | **One Constant** | — | In preparation |
+| IV | **The Bounce Theorem** | — | In preparation |
+
+**Computational scripts** → [`unification_series/`](unification_series/)
+
+Key results from `unification_series/`:
+- Quantum phase transition γˣ = **1.1838** — N-converged at 0.000% from N=30 to N=50
+- Whisper exponent β = **−δ = −4.66920…** — falsifies Drummond-Walls (1980) at 0.26% precision
+- Born rule derived from cascade renormalization: unique L^p invariant forces **p = 2**
 
 ---
 
@@ -76,6 +97,12 @@ Three papers, unlisted.
 
 ```
 resonance-theory-code/
+│
+├── unification_series/              # Unification Series: Papers I–II (PRE / PRL / PRA)
+│   ├── 82_n_convergence.py          # N-convergence of quantum phase transition
+│   ├── 83_semiclassical_correspondence.py  # Semiclassical emergence threshold
+│   ├── 84_whisper_quantified.py     # Whisper exponent: β = −δ = −4.66920…
+│   └── README.md
 │
 ├── lucian_law_trilogy/              # Papers 1–3: The Lucian Law
 │   ├── generate_lucian_law_paper.py
