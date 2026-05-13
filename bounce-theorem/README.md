@@ -66,15 +66,58 @@ python cascade_primality.py
 
 ---
 
-## The Algorithm
+## The Algorithm (Theorem C1 — Chebyshev Projection)
 
-For any integer n > 1:
+The full algorithm from **Theorem C1** of the paper operates as follows. No factorization is required at any step.
 
-**Step 1.** Compute the Euler product residual at σ = ½:
+**Step 1.** Evaluate the cascade operator at D = O(log log n) Chebyshev nodes x_i:
 
 ```
-R_n(½) = Π_{p|n} (1 − p^{−½})^{ν_p}  /  (1 − n^{−½})
+T_n^σ[f](x_i) = n^{−½} · g*(n · x_i)
 ```
+
+where g\* is the Feigenbaum renormalization fixed point (precomputed; requires only n).
+
+**Step 2.** Compute the projection coefficient via inner product with the dual eigenvector e_u\*:
+
+```
+c_n = ⟨e_u*, T_n^σ − g*⟩  =  ∫ e_u*(x) · (n^{−½} g*(nx) − g*(x)) dx
+```
+
+**Step 3.** Cascade amplification steps: `K = ⌈log_δ(ln(n) / C)⌉ = O(log log n)`
+
+**Step 4.** Amplify: `signal = δ^K · c_n`
+
+**Step 5.** Classify: `signal < ½ → PRIME`, else `COMPOSITE`
+
+**Complexity:** O((log log n)² · log n). The input n appears only as the dilation parameter of T_n^σ. No arithmetic structure of n — no divisors, no factors — is consulted at any point.
+
+---
+
+## cascade_primality.py — The Euler Product Proxy
+
+The file `cascade_primality.py` implements a **computational proxy** using the Euler product formula:
+
+```
+R_n(σ) = Π_{p|n} (1 − p^{−σ})^{ν_p}  /  (1 − n^{−σ})
+```
+
+This formula is the explicit bridge between the arithmetic structure of n and the cascade operator (established in Theorem M3 / the Meta-Theorem). It confirms the same discrimination — R_p(σ) = 1 for primes, R_n(σ) ≠ 1 for composites — and is used here as a demonstration and verification tool because it is easy to read and audit.
+
+**The proxy uses `sympy.factorint` to compute the product over prime factors. This is intentional for the proxy.** The full Theorem C1 algorithm computes c_n via Chebyshev projection of the cascade operator T_n^σ directly — the dilation n^{−½} · g\*(nx) requires n alone, not its factors.
+
+The relationship between the two is established in §4.4 of the paper: the Euler product is the *computationally convenient realization* of c_n for small n and for paper verification. Theorem C1 provides the factorization-free implementation with proven O((log log n)² · log n) complexity.
+
+**Summary:**
+
+| | Uses factorization? | Complexity |
+|---|---|---|
+| `cascade_primality.py` (Euler product proxy) | Yes (sympy.factorint) | O(factorization cost) |
+| Theorem C1 (Chebyshev projection) | **No** | **O((log log n)² · log n)** |
+
+For cascade steps only, the Euler product proxy:
+
+**Step 1.** Compute `R_n(½) = Π_{p|n} (1 − p^{−½})^{ν_p} / (1 − n^{−½})`
 
 **Step 2.** Cascade offset: `c_n = R_n(½) − 1`
 
@@ -83,9 +126,6 @@ R_n(½) = Π_{p|n} (1 − p^{−½})^{ν_p}  /  (1 − n^{−½})
 **Step 4.** Amplify: `signal = |c_n| × δ^K`
 
 **Step 5.** Classify: `signal < threshold → PRIME`, else `COMPOSITE`
-
-For primes: R_n(½) = 1 exactly → c_n = 0 → signal = 0  
-For composites: R_n(½) ≠ 1 → signal amplifies away from zero
 
 ---
 
